@@ -52,7 +52,7 @@ const VideoUpload = ({ onAnalysisStart, onAnalysisComplete, isAnalyzing }) => {
     formData.append('video', selectedFile)
 
     try {
-      const response = await fetch('http://localhost:5000/api/analyze', {
+      const response = await fetch('https://gym-bot-h7lw.onrender.com/api/analyze', {
         method: 'POST',
         body: formData,
       })
